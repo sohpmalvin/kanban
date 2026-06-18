@@ -121,7 +121,7 @@ export default function KanbanBoard({ initialTasks, userId }: Props) {
         onDragOver={handleDragOver}
         onDragEnd={handleDragEnd}
       >
-        <div className="flex gap-5 p-6 min-w-max">
+        <div className="flex flex-col md:flex-row gap-5 p-4 md:p-6 md:min-w-max">
           {COLUMNS.map(column => (
             <KanbanColumn
               key={column.id}
